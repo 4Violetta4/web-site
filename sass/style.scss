@@ -25,10 +25,9 @@ html {
             align-items: center;
             li {
                 list-style-type: none;
-                font-size: 1.5vw;
                 transition: 0.3s;
                 img {
-                    margin-top: 1vw;
+                    margin: 1vw 5vw 0 0;
                     width: 6vw;
                 }
                 &:hover {
@@ -40,7 +39,6 @@ html {
     }
 
     header {
-        margin: 15vw 0;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -80,7 +78,6 @@ html {
                     }
                     figcaption {
                         margin-top: 1vw;
-                        font-size: 1.5vw;
                         text-align: center;
                     }
                 }
@@ -112,11 +109,9 @@ html {
             label{
                 display: block;
                 width: 25vw;
-                font-size: 1.3vw;
             }
             input, select {
                 width: 20vw;
-                font-size: 1.3vw;
                 border-radius: 1vw;
                 padding: 0.5vw;
                 border: 1px solid black;
@@ -126,9 +121,6 @@ html {
                 align-items: center;
                 justify-content: space-between;
                 width: 20vw;
-                span {
-                    font-size: 1.3vw;
-                }
                 input[type="radio"] {
                     width: 2vw;
                     height: 2vw;
@@ -154,15 +146,6 @@ html {
         background-color: #E3D7D7;
         h2, p, span {
             text-align: center;
-        }
-        h2 {
-            font-size: 2vw;
-        }
-        p {
-            font-size: 1.5vw;
-        }
-        span {
-            font-size: 1.8vw;
         }
         .social-media {
             display: flex;
@@ -192,16 +175,76 @@ html {
     }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 600px) {
+    nav {
+        ul {
+            padding-right: 5vw;
+            li {
+                font-size: 2.5vw;
+            }
+        }
+    }
+    header {
+        margin: 20vw 0;
+    }
+    .choose {
+        figcaption {
+            font-size: 3vw;
+        }
+    }
+    form {
+        label, input, select, span {
+            font-size: 2vw;
+        }
+    }
     footer {
         padding: 1vw 0 8vw 0;
         margin: 10vw -8px -8px -8px;
+        h2 {
+            font-size: 2.5vw;
+        }
+        p {
+            font-size: 2.2vw;
+        }
+        span {
+            font-size: 2.4vw;
+        }
     }
 }
-@media (min-width: 440px) {
+@media (min-width: 600px) {
+    nav {
+        ul {
+            padding-right: 0;
+            li {
+                font-size: 1.8vw;
+            }
+        }
+    }
+    header {
+        margin: 15vw 0;
+    }
+    .choose {
+        figcaption {
+            font-size: 1.5vw;
+        }
+    }
+    form {
+        label, input, select, span {
+            font-size: 1.3vw;
+        }
+    }
     footer {
         padding: 1vw 0 4vw 0;
         margin: 0 -8px -8px -8px;
+        h2 {
+            font-size: 2vw;
+        }
+        p {
+            font-size: 1.5vw;
+        }
+        span {
+            font-size: 1.8vw;
+        }
     }
 }
 
