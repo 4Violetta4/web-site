@@ -22,6 +22,9 @@ html a:visited, html a:link {
 html nav {
   background-color: #e3d7d7e1;
   margin: -15px -8px;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 html nav ul {
@@ -37,14 +40,13 @@ html nav ul {
 
 html nav ul li {
   list-style-type: none;
-  font-size: 1.5vw;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 html nav ul li img {
-  margin-top: 1vw;
-  width: 10vw;
+  margin: 1vw 5vw 0 0;
+  width: 6vw;
 }
 
 html nav ul li:hover {
@@ -53,7 +55,6 @@ html nav ul li:hover {
 }
 
 html header {
-  margin: 10vw 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -123,7 +124,6 @@ html .choose .flowers .photo_1-3 figure img:hover, html .choose .flowers .photo_
 
 html .choose .flowers .photo_1-3 figure figcaption, html .choose .flowers .photo_4-6 figure figcaption {
   margin-top: 1vw;
-  font-size: 1.5vw;
   text-align: center;
 }
 
@@ -168,12 +168,10 @@ html form div {
 html form div label {
   display: block;
   width: 25vw;
-  font-size: 1.3vw;
 }
 
 html form div input, html form div select {
   width: 20vw;
-  font-size: 1.3vw;
   border-radius: 1vw;
   padding: 0.5vw;
   border: 1px solid black;
@@ -190,10 +188,6 @@ html form div .radio {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 20vw;
-}
-
-html form div .radio span {
-  font-size: 1.3vw;
 }
 
 html form div .radio input[type="radio"] {
@@ -225,18 +219,6 @@ html footer {
 
 html footer h2, html footer p, html footer span {
   text-align: center;
-}
-
-html footer h2 {
-  font-size: 2vw;
-}
-
-html footer p {
-  font-size: 1.5vw;
-}
-
-html footer span {
-  font-size: 1.8vw;
 }
 
 html footer .social-media {
@@ -282,17 +264,65 @@ html footer .social-media a img {
   transition: 0.4s;
 }
 
-@media (max-width: 440px) {
+@media (max-width: 600px) {
+  nav ul {
+    padding-right: 5vw;
+  }
+  nav ul li {
+    font-size: 2.5vw;
+  }
+  header {
+    margin: 20vw 0;
+  }
+  .choose figcaption {
+    font-size: 3vw;
+  }
+  form label, form input, form select, form span {
+    font-size: 2vw;
+  }
   footer {
     padding: 1vw 0 8vw 0;
     margin: 10vw -8px -8px -8px;
   }
+  footer h2 {
+    font-size: 2.5vw;
+  }
+  footer p {
+    font-size: 2.2vw;
+  }
+  footer span {
+    font-size: 2.4vw;
+  }
 }
 
-@media (min-width: 440px) {
+@media (min-width: 600px) {
+  nav ul {
+    padding-right: 0;
+  }
+  nav ul li {
+    font-size: 1.8vw;
+  }
+  header {
+    margin: 15vw 0;
+  }
+  .choose figcaption {
+    font-size: 1.5vw;
+  }
+  form label, form input, form select, form span {
+    font-size: 1.3vw;
+  }
   footer {
     padding: 1vw 0 4vw 0;
     margin: 0 -8px -8px -8px;
+  }
+  footer h2 {
+    font-size: 2vw;
+  }
+  footer p {
+    font-size: 1.5vw;
+  }
+  footer span {
+    font-size: 1.8vw;
   }
 }
 

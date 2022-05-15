@@ -27,6 +27,9 @@ html a:visited, html a:link {
 html nav {
   background-color: #e3d7d7e1;
   margin: -15px -8px;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 html nav ul {
@@ -42,14 +45,13 @@ html nav ul {
 
 html nav ul li {
   list-style-type: none;
-  font-size: 1.5vw;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 html nav ul li img {
   margin-top: 1vw;
-  width: 10vw;
+  width: 6vw;
 }
 
 html nav ul li:hover {
@@ -59,12 +61,11 @@ html nav ul li:hover {
 
 html header {
   background-color: rgba(234, 195, 195, 0.58);
-  margin: 2vw -8px 0 -8px;
+  margin: 12vw -8px 0 -8px;
 }
 
 html header h2 {
   margin-left: 1.5vw;
-  font-size: 3vw;
   font-weight: 100;
   font-family: "Montserrat-regular";
 }
@@ -75,11 +76,9 @@ html .flower {
 
 html .flower h2 {
   text-align: center;
-  font-size: 3vw;
 }
 
 html .flower p {
-  font-size: 1.5vw;
   font-family: "Playfair";
   text-align: justify;
   text-indent: 2vw;
@@ -87,8 +86,6 @@ html .flower p {
 }
 
 html .flower p img {
-  width: 22vw;
-  height: 16vw;
   border-radius: 2vw;
   margin: 0 2vw 2vw 2vw;
   -webkit-box-shadow: 0px 10px 50px 10px rgba(182, 44, 232, 0.8);
@@ -118,18 +115,6 @@ html footer {
 
 html footer h2, html footer p, html footer span {
   text-align: center;
-}
-
-html footer h2 {
-  font-size: 2vw;
-}
-
-html footer p {
-  font-size: 1.5vw;
-}
-
-html footer span {
-  font-size: 1.8vw;
 }
 
 html footer .social-media {
@@ -173,5 +158,74 @@ html footer .social-media a img {
   margin: 0 0.8vw 0 1.5vw;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    padding-left: 5vw;
+  }
+  nav ul li {
+    font-size: 2.5vw;
+    padding: 0 2vw 0 0;
+  }
+  nav ul li img {
+    margin-left: -2vw;
+  }
+  header h2 {
+    font-size: 3.8vw;
+  }
+  .flower h2 {
+    font-size: 3.8vw;
+  }
+  .flower p {
+    font-size: 3.5vw;
+  }
+  .flower img {
+    width: 30vw;
+    height: 23vw;
+  }
+  footer h2 {
+    font-size: 3vw;
+  }
+  footer p {
+    font-size: 2vw;
+  }
+  footer span {
+    font-size: 2.7vw;
+  }
+}
+
+@media (min-width: 600px) {
+  nav ul {
+    padding-right: 0;
+  }
+  nav ul li {
+    font-size: 1.8vw;
+  }
+  nav ul li img {
+    margin-right: 0;
+  }
+  header h2 {
+    font-size: 3vw;
+  }
+  .flower h2 {
+    font-size: 3vw;
+  }
+  .flower p {
+    font-size: 1.5vw;
+  }
+  .flower img {
+    width: 22vw;
+    height: 16vw;
+  }
+  footer h2 {
+    font-size: 2vw;
+  }
+  footer p {
+    font-size: 1.5vw;
+  }
+  footer span {
+    font-size: 1.8vw;
+  }
 }
 /*# sourceMappingURL=history.css.map */

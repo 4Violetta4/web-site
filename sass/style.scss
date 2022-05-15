@@ -87,7 +87,6 @@ html {
     form {
         display: flex;
         flex-direction: column;
-        width: 50vw;
         margin: 6vw auto;
         background-color: #F0DEFC;
         border-radius: 2vw;
@@ -100,7 +99,6 @@ html {
         }
         h2 {
             text-align: center;
-            font-size: 1.9vw;
             margin-bottom: 3vw;
         }
         div {
@@ -108,10 +106,8 @@ html {
             margin: 0.5vw;
             label{
                 display: block;
-                width: 25vw;
             }
             input, select {
-                width: 20vw;
                 border-radius: 1vw;
                 padding: 0.5vw;
                 border: 1px solid black;
@@ -193,8 +189,18 @@ html {
         }
     }
     form {
+        width: 90vw;
+        h2 {
+            font-size: 4.5vw;
+        }
         label, input, select, span {
-            font-size: 2vw;
+            font-size: 4vw;
+        }
+        label {
+            width: 35vw;
+        }
+        input {
+            width: 30vw;
         }
     }
     footer {
@@ -229,8 +235,18 @@ html {
         }
     }
     form {
+        width: 50vw;
+        h2 {
+            font-size: 1.9vw;
+        }
         label, input, select, span {
             font-size: 1.3vw;
+        }
+        label {
+            width: 25vw;
+        }
+        input {
+            width: 20vw;
         }
     }
     footer {
