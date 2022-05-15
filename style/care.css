@@ -82,6 +82,9 @@ html .care_header {
 
 html .flower1, html .flower2 {
   margin: 0 0 5vw 0;
+  background-color: #fcfcfcc4;
+  padding: 0.2vw;
+  margin: 0 -8px;
 }
 
 html .flower1:nth-child(odd), html .flower2:nth-child(odd) {
